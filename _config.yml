@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "ko-KR"
 title                    : "Dev Suhwan"
 title_separator          : "-"
-subtitle                 : "personal code page"
+subtitle                 : "personal note page"
 name                     : "suhwan Kim"
 description              : #"personal code page"
 url                      : "https://tryakasha.github.io"
