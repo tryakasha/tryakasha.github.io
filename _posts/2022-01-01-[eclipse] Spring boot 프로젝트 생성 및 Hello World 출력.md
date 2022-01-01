@@ -1,8 +1,3 @@
----
-layout: single
-title: "[eclipse] spring boot 프로젝트 생성 및 Hello World 출력"
----
-### [eclipse] spring boot 프로젝트 생성 및 Hello World 출력
 
 1. Spring boot 프로젝트 생성
 <img src="..\image\2022-01-01\1_NewProject.png"/>
