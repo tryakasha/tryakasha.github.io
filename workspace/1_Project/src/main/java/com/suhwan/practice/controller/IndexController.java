@@ -30,4 +30,9 @@ public class IndexController {
     System.out.println(value);
     return taskService.getEnvProperty(value);
   }
+  
+  @RequestMapping(value = "/checkClassPath")
+  public String checkClassPath(){
+    return taskService.checkClassPath();
+  }
 }

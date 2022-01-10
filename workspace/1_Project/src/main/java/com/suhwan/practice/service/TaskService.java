@@ -32,5 +32,16 @@ public class TaskService {
       return null;
     }
   }
+
+  public String checkClassPath() {
+    String strClassPath = System.getProperty("java.class.path");
+    String[] classPathArray = strClassPath.split(";");
+    
+    StringBuilder classPathBuilder = new StringBuilder();
+    for(String classPath : classPathArray){
+      classPathBuilder.append(classPath + "<br>");
+    }
+    return classPathBuilder.toString();
+  }
   
 }
