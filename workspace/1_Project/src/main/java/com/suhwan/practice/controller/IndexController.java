@@ -1,11 +1,14 @@
 package com.suhwan.practice.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.suhwan.practice.service.TaskService;
+import com.suhwan.practice.vo.NameValuePair;
 
 @RestController
 public class IndexController {
@@ -34,5 +37,17 @@ public class IndexController {
   @RequestMapping(value = "/checkClassPath")
   public String checkClassPath(){
     return taskService.checkClassPath();
+  }
+  
+  @RequestMapping(value = "/paramTest/{firstPathParam}/{secondPathParam}")
+  public void paramTest(@PathVariable String firstPathParam, 
+                          @PathVariable String secondPathParam, 
+                          @RequestParam String queryParam, 
+                          @RequestBody NameValuePair nameValuePair){
+    
+    System.out.println("firstPathParam: " + firstPathParam);
+    System.out.println("secondPathParam: " + secondPathParam);
+    System.out.println("queryParam: " + queryParam);
+    System.out.println("requestBody: " + nameValuePair);
   }
 }
