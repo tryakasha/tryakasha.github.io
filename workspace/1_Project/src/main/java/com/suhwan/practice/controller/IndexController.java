@@ -50,4 +50,21 @@ public class IndexController {
     System.out.println("queryParam: " + queryParam);
     System.out.println("requestBody: " + nameValuePair);
   }
+  
+  @RequestMapping(value = "/beanTest")
+  public void beanTestMethod(){
+    taskService.beanTest();
+  }
+  
+  @RequestMapping(value = "/primaryTest")
+  public void primaryTestMethod(){
+    taskService.primaryTest();
+  }
+  
+  @RequestMapping(value = "/orderTest")
+  public void orderTestMethod(){
+    taskService.orderTest();
+  }
+  
+  
 }

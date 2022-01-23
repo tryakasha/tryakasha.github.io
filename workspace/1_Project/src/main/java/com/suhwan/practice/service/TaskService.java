@@ -1,16 +1,44 @@
 package com.suhwan.practice.service;
 
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+
+import com.suhwan.practice.vo.BeanOne;
+import com.suhwan.practice.vo.ComponentClass;
+import com.suhwan.practice.vo.ParentsComponent;
 
 @Service
 public class TaskService {
-
+  
   @Autowired
   private ValuePropertyManager valPropertyManager;
   
   @Autowired
   private EnvironmentPropertyManager envPropertyManager;
+  
+  @Autowired
+  private BeanOne beanOne;
+  
+  @Autowired
+  private ComponentClass componentClass;
+  
+  @Autowired
+  @Qualifier("component")
+  private ParentsComponent component;
+  
+  @Autowired
+  private List<ParentsComponent> compList;
+  
+  
+  @PostConstruct
+  private void init(){
+    System.out.println("postConsturct init");
+  }
   
   public String getValProperty(String key) {
     
@@ -43,5 +71,19 @@ public class TaskService {
     }
     return classPathBuilder.toString();
   }
+
+  public void beanTest() {
+    System.out.println(beanOne.returnName());
+    System.out.println(componentClass.returnName());
+  }
   
+  public void primaryTest(){
+    System.out.println(component.checkComponent());
+  }
+  
+  public void orderTest(){
+    for(ParentsComponent comp : compList){
+      System.out.println("comp: " + comp.checkComponent());
+    }
+  }
 }
