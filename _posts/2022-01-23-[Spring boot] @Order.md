@@ -4,7 +4,23 @@
 
 
 
-위의 Component 를 사용하여 테스트
+기존 Component 를 사용하여 테스트
+
+##### Component
+
+```java
+public class DependsOnComponentOne {
+  public DependsOnComponentOne(){
+    System.out.println("Generated DependsOnCompOne");
+  }
+}
+
+public class DependsOnComponentTwo {
+  public DependsOnComponentTwo(){
+    System.out.println("Generated DependsOnCompTwo");
+  }
+}
+```
 
 
 
@@ -25,7 +41,7 @@ public void orderTest(){
 
 ##### 메소드 실행 결과
 
-![OrderTest_1](D:\personal git workspace\tryakasha.github.io\image\2022-01-23\OrderTest_1.PNG)
+![OrderTest_1](..\image\2022-01-23\OrderTest_1.PNG)
 
 
 
@@ -68,6 +84,6 @@ public class ChildComponentTwo implements ParentsComponent{
 
 ##### 테스트 결과
 
-![OrderTest_2](D:\personal git workspace\tryakasha.github.io\image\2022-01-23\OrderTest_2.PNG)
+![OrderTest_2](..\image\2022-01-23\OrderTest_2.PNG)
 
 순서가 바뀐것을 확인할 수 있음
