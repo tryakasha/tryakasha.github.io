@@ -66,5 +66,9 @@ public class IndexController {
     taskService.orderTest();
   }
   
+  @RequestMapping(value = "/getMemberList")
+  public void getMemberList(){
+    taskService.getMemberList();
+  }
   
 }

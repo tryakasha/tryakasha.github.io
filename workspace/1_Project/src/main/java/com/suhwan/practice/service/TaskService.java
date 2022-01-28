@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import com.suhwan.practice.dao.MemberDao;
 import com.suhwan.practice.vo.BeanOne;
 import com.suhwan.practice.vo.ComponentClass;
 import com.suhwan.practice.vo.ParentsComponent;
@@ -34,6 +35,8 @@ public class TaskService {
   @Autowired
   private List<ParentsComponent> compList;
   
+  @Autowired
+  private MemberDao memberDao;
   
   @PostConstruct
   private void init(){
@@ -85,5 +88,9 @@ public class TaskService {
     for(ParentsComponent comp : compList){
       System.out.println("comp: " + comp.checkComponent());
     }
+  }
+
+  public void getMemberList() {
+    System.out.println(memberDao.getUserList());
   }
 }
