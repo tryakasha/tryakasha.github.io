@@ -1,0 +1,10 @@
+[2022-02-06 14:16:33:152][main] ERROR logTest FileLog - errorLog
+[2022-02-06 14:16:43:124][main] ERROR logTest FileLog - errorLog
+[2022-02-06 14:22:41:130][main] ERROR logTest FileLog - errorLog
+[2022-02-06 14:24:03:129][main] ERROR logTest FileLog - errorLog
+[2022-02-06 14:28:19:125][main] ERROR logTest FileLog - errorLog
+[2022-02-06 14:28:36:124][main] ERROR logTest FileLog - errorLog
+[2022-02-06 14:29:10:134][main] ERROR logTest FileLog - errorLog
+[2022-02-06 14:29:37:143][main] ERROR logTest com.suhwan.practice.Logging - errorLog
+[2022-02-06 14:32:38:123][main] ERROR logTest FileLog - errorLog
+[2022-02-06 14:32:55:125][main] ERROR logTest FileLog - errorLog

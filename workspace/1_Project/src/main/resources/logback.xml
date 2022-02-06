@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <Pattern>[%d{yyyy-MM-dd HH:mm:ss}:%-3relative][%thread] %-5level %M %logger{35} - %msg%n</Pattern>
+    </encoder>
+  </appender>
+  <appender name="basicFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>./server.log</file>
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <pattern>[%d{yyyy-MM-dd HH:mm:ss}:%-3relative][%thread] %-5level %M %logger{35} - %msg%n</pattern>
+    </encoder>
+    <filter class="ch.qos.logback.classic.filter.LevelFilter">
+      <level>error</level>
+      <onMatch>ACCEPT</onMatch>
+      <onMismatch>DENY</onMismatch>
+    </filter>
+    <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <fileNamePattern>server.%d{yyyyMMdd}.%i.log</fileNamePattern>
+      <!-- 50MB를 초과하면 새로운 로그파일 생성. ex) server.200903.2.log -->
+      <maxFileSize>50MB</maxFileSize>
+      <!-- 60일이 지난 파일은 삭제한다 -->
+      <!-- <maxHistory>60</maxHistory> -->
+    </rollingPolicy>
+  </appender>
+
+  <!-- additivity = true 로 설정하면 부모를 받아서 사용하고 level은 info이기 때문에 -->
+  <!-- root 는 debug , consoleLog는 info라서 info부터 남게 됨 -->
+  <!-- root 가 error , consoleLog는 info인 경우 info로 남김 -->
+  <!-- 결론은 logger 태그가 우선순위가 그냥 더 높고, additivity를 지정함으로써 Console을 참조하여 쓰는듯 -->
+  <logger name="FileLog" level="info" additivity="true">
+    <appender-ref ref="basicFileAppender" />
+  </logger>
+
+  <root level="debug">
+    <appender-ref ref="Console" />
+    <!-- <appender-ref ref="basicFileAppender" /> -->
+  </root>
+</configuration>
