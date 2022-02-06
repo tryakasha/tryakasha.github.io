@@ -75,23 +75,23 @@
 
 
 
-* <configuration> : configuration 안에 추가할 기능을 넣어준다.
+* configuration : configuration 안에 추가할 기능을 넣어준다.
 
-* <appender> : 콘솔에 출력되는 형식을 지정한다. 위의 작성한 xml에서는 2개의 (console, file) appender를 작성 했다.
+* appender : 콘솔에 출력되는 형식을 지정한다. 위의 작성한 xml에서는 2개의 (console, file) appender를 작성 했다.
 
   > name="basicFileAppender" appender를 보면, class에 RolloingFileAppender를 사용하였는데 이는 파일 용량, 개수를 지정할 수 있는 기능을 제공
 
-* <encoder> : 인코딩한 로그를 기록하며, <pattern> 패턴에 따라 기록한다.
+* encoder : 인코딩한 로그를 기록하며, <pattern> 패턴에 따라 기록한다.
 
 
 
-* <logger> : name에 따라 로깅 방식을 지정할 수 있다. name을 Test로 지정한다면, getLogger("Test")로 불러와서 사용해야 설정한 내용을 불러올 수 있다.
+* logger : name에 따라 로깅 방식을 지정할 수 있다. name을 Test로 지정한다면, getLogger("Test")로 불러와서 사용해야 설정한 내용을 불러올 수 있다.
 
   level 은 ConsoleLog 의 로그레벨을 지정하며, additivity 가 true로 되어있으면 root를 상속받는다는 의미
 
-  즉,  <logger name="FileLog" level="info" additivity="true">  </logger> 로 내용을 비워 지정한다면 결국 root랑 다를게 없다.
+  즉,  logger name="FileLog" level="info" additivity="true"  로 내용을 비워 지정한다면 결국 root랑 다를게 없다.
 
-* <root> : default 로그 설정이다. 위의 설정은 Console Appender 만 추가하여 로그를 남길때 console에만 로그를 남게 하였다.
+* root : default 로그 설정이다. 위의 설정은 Console Appender 만 추가하여 로그를 남길때 console에만 로그를 남게 하였다.
 
 
 
@@ -124,7 +124,7 @@ public class Logging {
 
 
 
-로그를 불러올때 Logger logger = LoggerFactory.getLogger(Logging.class); 를 사용했고(log Name을 따로 지정하지 않았음) <root> 태그 안에 Console만 추가되어 있기에 콘솔에 로그를 남기고 있는 모습.
+로그를 불러올때 Logger logger = LoggerFactory.getLogger(Logging.class); 를 사용했고(log Name을 따로 지정하지 않았음) root 태그 안에 Console만 추가되어 있기에 콘솔에 로그를 남기고 있는 모습.
 
 **trace로그가 남지않는 이유는 root level 을 debug**로 설정하였기 때문이다.
 
@@ -176,11 +176,13 @@ public class Logging {
 
 참고로, FileLog는 basicFileAppender를 참조하고있고, basicFileAppender는 파일명을 <file>./server.log</file> 로 지정하고있고,
 
+```xml
 <filter class="ch.qos.logback.classic.filter.LevelFilter">
       <level>error</level>
       <onMatch>ACCEPT</onMatch>
       <onMismatch>DENY</onMismatch>
  </filter>
+```
 
 설정을 통하여 error 로그만 파일에 기록하고있다.
 
