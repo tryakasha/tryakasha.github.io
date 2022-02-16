@@ -1,4 +1,4 @@
-package com.suhwan.practice;
+package com.suhwan.practice.other;
 
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.core.JsonProcessingException;

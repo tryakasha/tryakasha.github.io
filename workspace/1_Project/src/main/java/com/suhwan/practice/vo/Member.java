@@ -1,6 +1,7 @@
 package com.suhwan.practice.vo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.suhwan.practice.vo.type.Status;
 
 import lombok.Data;
 
@@ -12,4 +13,6 @@ public class Member {
   
   @JsonProperty("newAge")
   private String age;
+  
+  private Status status;
 }

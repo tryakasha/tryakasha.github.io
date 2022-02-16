@@ -1,4 +1,4 @@
-package com.suhwan.practice;
+package com.suhwan.practice.other;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
