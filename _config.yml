@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "개발노트"
+title                    : "Dev Note"
 title_separator          : "-"
-subtitle                 : "기록하는 개발자"
-name                     : "솬"
+subtitle                 : #"기록하는 개발자"
+name                     : "suhwan kim"
 description              : #"personal page"
 url                      : "https://tryakasha.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -69,7 +69,7 @@ algolia:
   powered_by             : false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
+  instant_search         : true
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -102,7 +102,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "suhwan kim"
+  name             : "Suhwan Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "ronze79@gmail.com"
   location         : "Republic of korea"
