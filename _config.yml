@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Dev Suhwan"
+title                    : "개발노트"
 title_separator          : "-"
-subtitle                 : "personal note page"
-name                     : "suhwan Kim"
-description              : #"personal code page"
+subtitle                 : "기록하는 개발자"
+name                     : "솬"
+description              : #"personal page"
 url                      : "https://tryakasha.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/tryakasha/tryakasha.github.io"
@@ -66,7 +66,7 @@ algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+  powered_by             : false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
@@ -105,7 +105,7 @@ author:
   name             : "suhwan kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "ronze79@gmail.com"
-  location         : "Korea"
+  location         : "Republic of korea"
   # email            : "ronze79@gmail.com"
   links:
     - label: "Email"
