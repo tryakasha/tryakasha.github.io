@@ -1,3 +1,10 @@
+---
+categories: Spring-boot
+author_profile: false
+sidebar:
+  nav: "docs"
+---
+
 
 
 * Oracle 에 접속할 계정 생성
@@ -175,4 +182,4 @@ public class Application {
 
 * 결과..
 
-![result](..\image\2022-01-28\result.PNG)
+![result](..\..\image\2022-01-28\result.PNG)

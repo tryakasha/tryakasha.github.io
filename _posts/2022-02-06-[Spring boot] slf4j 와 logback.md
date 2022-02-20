@@ -1,3 +1,12 @@
+---
+categories: Spring-boot
+author_profile: false
+sidebar:
+  nav: "docs"
+---
+
+
+
 **SLF4J (simple logging facade for java)**
 
 다양한 로깅 프레임워크에 대한 추상화 역할을 하는 라이브러리
@@ -120,7 +129,7 @@ public class Logging {
 
 
 
-![LoggingTest_1](..\image\2022-02-06\LoggingTest_1.PNG)
+![LoggingTest_1](..\..\image\2022-02-06\LoggingTest_1.PNG)
 
 
 
@@ -215,7 +224,7 @@ public class Logging {
 
 
 
-![LogError](..\image\2022-02-06\LogError.PNG)
+![LogError](..\..\image\2022-02-06\LogError.PNG)
 
 
 
@@ -239,7 +248,7 @@ XML 설정 변경 후
 
 ##### 실행 결과
 
-![FileLog](..\image\2022-02-06\FileLog.PNG)
+![FileLog](..\..\image\2022-02-06\FileLog.PNG)
 
 
 
@@ -258,7 +267,7 @@ XML 설정 변경 후
 
 root 설정에 두개의 appender를 추가하여 테스트
 
-![LoggingTest_2](..\image\2022-02-06\LoggingTest_2.PNG)
+![LoggingTest_2](..\..\image\2022-02-06\LoggingTest_2.PNG)
 
 콘솔, 파일 모두 저장됨
 

@@ -1,3 +1,12 @@
+---
+categories: Spring-boot
+author_profile: false
+sidebar:
+  nav: "docs"
+---
+
+
+
 #### ClassPath란?
 
 프로퍼티 파일을 읽을때 classPath: 라고 되어있는 부분이 있는데, classPath는 무엇일까
@@ -42,5 +51,5 @@ classPath 는 JVM, java 컴파일러가 class파일을 찾을때 기준이 되�
 
 * 테스트 결과
 
-![checkClassPath](.\..\image\2022-01-10\checkClassPath.PNG)
+![checkClassPath](.\..\..\image\2022-01-10\checkClassPath.PNG)
 

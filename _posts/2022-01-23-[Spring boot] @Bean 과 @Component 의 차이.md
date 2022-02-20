@@ -1,3 +1,12 @@
+---
+categories: Spring-boot
+author_profile: false
+sidebar:
+  nav: "docs"
+---
+
+
+
 #### @Bean
 
 * 보통 외부 라이브러리를 사용할때 이용한다.
@@ -59,7 +68,7 @@ public void beanTest() {
 
 정말 간단하게 테스트 가능
 
-![BeanTest](..\image\2022-01-23\BeanTest.PNG)
+![BeanTest](..\..\image\2022-01-23\BeanTest.PNG)
 
 
 
@@ -108,4 +117,4 @@ public void beanTest() {
 
 ##### 테스트
 
-![ComponentTest](..\image\2022-01-23\ComponentTest.PNG)
+![ComponentTest](..\..\image\2022-01-23\ComponentTest.PNG)

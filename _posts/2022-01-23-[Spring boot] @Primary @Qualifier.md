@@ -1,3 +1,12 @@
+---
+categories: Spring-boot
+author_profile: false
+sidebar:
+  nav: "docs"
+---
+
+
+
 같은 타입의 bean이 여러개인 경우 주입할때 에러가 발생하는데, 이때 bean의 우선순위를 지정하여 해결할 수 있다.
 
 
@@ -44,7 +53,7 @@ public class ChildComponentTwo implements ParentsComponent{
 
 ##### 에러 확인
 
-![CheckErrorForPrimaryAnnotation](..\image\2022-01-23\CheckErrorForPrimaryAnnotation.PNG)
+![CheckErrorForPrimaryAnnotation](..\..\image\2022-01-23\CheckErrorForPrimaryAnnotation.PNG)
 
 
 
@@ -98,7 +107,7 @@ public void primaryTest(){
 
 ##### 테스트 결과
 
-![PrimaryTest](..\image\2022-01-23\PrimaryTest.PNG)
+![PrimaryTest](..\..\image\2022-01-23\PrimaryTest.PNG)
 
 
 
@@ -166,7 +175,7 @@ public void primaryTest(){
 
 ##### 테스트
 
-![QualifierTest](..\image\2022-01-23\QualifierTest.PNG)
+![QualifierTest](..\..\image\2022-01-23\QualifierTest.PNG)
 
 > @Primary 어노테이션을 일부로 제거하지 않았도 ComponentTwo를 제대로 주입하고 있다.
 >

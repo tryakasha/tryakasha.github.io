@@ -1,3 +1,12 @@
+---
+categories: Spring-boot
+author_profile: false
+sidebar:
+  nav: "docs"
+---
+
+
+
 #### @Value 사용
 
 
@@ -88,7 +97,7 @@ public class IndexController {
 
 * 테스트 결과
 
-![ValueResult](.\..\image\2022-01-05\ValueResult.PNG)
+![ValueResult](.\..\..\image\2022-01-05\ValueResult.PNG)
 
 
 
@@ -191,7 +200,7 @@ public String getEnvProperty(String key){
 
 * 테스트 결과
 
-![EnvResult](.\..\image\2022-01-05\EnvResult.PNG)
+![EnvResult](.\..\..\image\2022-01-05\EnvResult.PNG)
 
 
 

@@ -1,3 +1,10 @@
+---
+categories: Spring-boot
+author_profile: false
+sidebar:
+  nav: "docs"
+---
+
 
 
 Jackson objectMapper 클래스를 이용하여 Java Object <-> JSON 상호 변환이 가능하다.
@@ -28,7 +35,7 @@ Java Object -> JSON 를 **Serialize** JSON -> Java Object 를 **Desirialize**라
 
 ##### 결과
 
-![Serialize](..\image\2022-02-06\Serialize.PNG)
+![Serialize](..\..\image\2022-02-06\Serialize.PNG)
 
 
 
@@ -48,7 +55,7 @@ Java Object -> JSON 를 **Serialize** JSON -> Java Object 를 **Desirialize**라
 
 ##### 결과
 
-![Deserialize](..\image\2022-02-06\Deserialize.PNG)
+![Deserialize](..\..\image\2022-02-06\Deserialize.PNG)
 
 
 
@@ -77,7 +84,7 @@ Java Object -> JSON 를 **Serialize** JSON -> Java Object 를 **Desirialize**라
 
 ##### 결과
 
-![ExceptNull](..\image\2022-02-06\ExceptNull.PNG)
+![ExceptNull](..\..\image\2022-02-06\ExceptNull.PNG)
 
 
 
@@ -105,7 +112,7 @@ Java Object -> JSON 를 **Serialize** JSON -> Java Object 를 **Desirialize**라
 
 ##### 결과
 
-![UnkwonField](..\image\2022-02-06\UnkwonField.PNG)
+![UnkwonField](..\..\image\2022-02-06\UnkwonField.PNG)
 
 
 
@@ -168,4 +175,4 @@ public class JacksonObjectMapper {
 
 
 
-![JsonProperty](..\image\2022-02-06\JsonProperty.PNG)
+![JsonProperty](..\..\image\2022-02-06\JsonProperty.PNG)

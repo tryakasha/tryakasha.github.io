@@ -1,3 +1,12 @@
+---
+categories: Spring-boot
+author_profile: false
+sidebar:
+  nav: "docs"
+---
+
+
+
 #### @Order
 
 * List 형태로 Autowired할때 객체를 넣는 순서를 지정한다.
@@ -41,7 +50,7 @@ public void orderTest(){
 
 ##### 메소드 실행 결과
 
-![OrderTest_1](..\image\2022-01-23\OrderTest_1.PNG)
+![OrderTest_1](..\..\image\2022-01-23\OrderTest_1.PNG)
 
 
 
@@ -84,6 +93,6 @@ public class ChildComponentTwo implements ParentsComponent{
 
 ##### 테스트 결과
 
-![OrderTest_2](..\image\2022-01-23\OrderTest_2.PNG)
+![OrderTest_2](..\..\image\2022-01-23\OrderTest_2.PNG)
 
 순서가 바뀐것을 확인할 수 있음

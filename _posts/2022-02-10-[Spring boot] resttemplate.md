@@ -1,6 +1,8 @@
 ---
-layout: archive
-category: Spring boot
+categories: Spring-boot
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 
@@ -108,10 +110,10 @@ public class RestService {
 
 * Client
 
-![ClientLog](..\image\2022-02-10\ClientLog.PNG)
+![ClientLog](..\..\image\2022-02-10\ClientLog.PNG)
 
 
 
 * Server
 
-![ServerLog](..\image\2022-02-10\ServerLog.PNG)
+![ServerLog](..\..\image\2022-02-10\ServerLog.PNG)

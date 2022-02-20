@@ -1,3 +1,12 @@
+---
+categories: Spring-boot
+author_profile: false
+sidebar:
+  nav: "docs"
+---
+
+
+
 #### parameter를 받는 방법
 
 
@@ -39,4 +48,4 @@ public class NameValuePair {
 
 * 테스트
 
-![ParameterTest](..\image\2022-01-15\ParameterTest.PNG)
+![ParameterTest](..\..\image\2022-01-15\ParameterTest.PNG)

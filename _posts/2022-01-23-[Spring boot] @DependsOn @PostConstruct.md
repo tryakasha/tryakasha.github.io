@@ -1,3 +1,12 @@
+---
+categories: Spring-boot
+author_profile: false
+sidebar:
+  nav: "docs"
+---
+
+
+
 #### @DependsOn
 
 * bean이 생성되는 과정에서 다른 bean을 의존하고 있을때 의존하고 있는 bean이 있다고 명시해주는 어노테이션
@@ -32,7 +41,7 @@ public class DependsOnComponentTwo {
 
 ##### Bean 생성 순서 확인
 
-![DependsOnTest_1](..\image\2022-01-23\DependsOnTest_1.PNG)
+![DependsOnTest_1](..\..\image\2022-01-23\DependsOnTest_1.PNG)
 
 
 
@@ -54,7 +63,7 @@ public class DependsOnComponentOne {
 
 ##### Bean 생성 순서 확인
 
-![DependsOnTest_2](..\image\2022-01-23\DependsOnTest_2.PNG)
+![DependsOnTest_2](..\..\image\2022-01-23\DependsOnTest_2.PNG)
 
 
 
@@ -83,7 +92,7 @@ private void init(){
 
 ##### 서버 실행
 
-![PostConstruct](..\image\2022-01-23\PostConstruct.PNG)
+![PostConstruct](..\..\image\2022-01-23\PostConstruct.PNG)
 
 
 
