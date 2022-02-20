@@ -1,3 +1,13 @@
+```yml
+---
+layout: post
+title:  "resttemplate"
+category: Spring boot
+---
+```
+
+
+
 * Spring 3부터 지원
 * 스프링에서 제공하는 http 통신에 유용하게 쓸 수 있는 템플릿
 * HTTP 서버와의 통신을 단순화하고 RESTful 원칙을 지킨다. (json, xml을 쉽게 받을 수 있음)
