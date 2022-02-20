@@ -1,5 +1,4 @@
 ---
-title:  "resttemplate"
 category: Spring boot
 ---
 
